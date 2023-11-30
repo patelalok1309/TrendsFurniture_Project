@@ -66,6 +66,10 @@
   background-color: #010101;
 }
 
+.text-dark-hero {
+  color: var(--color-dark-200) !important;
+}
+
 .navbar-font {
   font-size: 18px;
   letter-spacing: 1px;
@@ -91,10 +95,15 @@
   background-color: var(--bg-dim-grey);
 }
 
+.color-dark-200 {
+  color: var(--color-dark-200) !important;
+}
+
 /* -------------Hero container --------- */
 .Hero {
   background-image: url("./assets/Images/hero_banner.jpg");
   background-size: cover;
+  margin-top: 3.5rem;
 }
 
 .Hero-content {
@@ -104,11 +113,13 @@
 .Hero-heading {
   font-size: 4rem;
   font-weight: 600;
+  color: var(--color-dark-200);
 }
 
 .Hero-para {
   line-height: 30px;
   font-weight: 300;
+  color: var(--color-dark-200);
 }
 
 .Hero-btn {
@@ -159,7 +170,13 @@
 }
 
 hr.hero-horizontal-rule {
-  border-top: 2px solid black;
+  border-top: 3px solid var(--color-dark-200);
+  opacity: 0.8;
+  background-color: var(--color-dark-200);
+}
+
+.hero-footers {
+  color: var(--color-dark-200);
 }
 
 /* -----Interior Design Left section-- */
