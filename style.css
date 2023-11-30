@@ -6,6 +6,10 @@
   --bg-light-grey: #f5f5f5;
   --bg-dim-grey: #efefef;
   --bg-greyish-green: #e4eedb;
+  --bg-footer-dark: #26292b;
+  --color-dark-200: #24262b;
+  --color-footer-text: #a7b9b2;
+  --btn-bg-hover: #ff6868;
 }
 
 /* * {
@@ -107,15 +111,47 @@
   font-weight: 300;
 }
 
-.btn-primary-grey {
-  background-color: var(--btn-grey-primary);
+.Hero-btn {
+  font-size: 20px;
   padding: 10px 36px;
-  font-size: 19px;
+  border: none;
+  background-color: var(--btn-grey-primary);
+  color: white;
+  font-weight: 600;
+  border-radius: 2px;
+  transition: background 0.5s ease;
+}
+
+.Hero-btn:hover {
+  background-color: var(--btn-bg-hover);
+}
+
+.btn-primary-grey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  background-color: var(--btn-grey-primary);
+  padding: 0px 30px;
+  font-size: 16px;
   font-weight: bolder;
   border: none;
   border-radius: 3px;
   color: white;
-  letter-spacing: 1px;
+  transition: background-color 1s ease;
+  transition: transform 4s ease;
+}
+
+.btn-primary-grey span {
+  transition: transform 0.5s ease;
+}
+
+.btn-primary-grey:hover {
+  background-color: var(--btn-bg-hover);
+}
+
+.btn-primary-grey:hover span {
+  transform: translateX(15px);
 }
 
 hr.hero-horizontal-rule {
@@ -182,6 +218,41 @@ hr.hero-horizontal-rule {
   color: var(--btn-grey-primary);
 }
 
+/* -------footer------ */
+.footer {
+  background-color: var(--bg-footer-dark);
+  padding-block: 4rem;
+}
+
+ul.footer-list-container {
+  padding-left: 0;
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: column;
+}
+
+ul.footer-list-container li:not(.footer-list-header) {
+  color: var(--color-footer-text);
+  list-style: none;
+  font-weight: 500;
+}
+
+.footer-list-header {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.subscribe-btn {
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--btn-grey-primary);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
 /* --------------breakpoint------------- */
 /* tablet view  */
 @media screen and (max-width: 1200px) {
@@ -285,5 +356,15 @@ hr.hero-horizontal-rule {
   .clients-header {
     font-size: 2.5rem;
     font-weight: 600;
+  }
+
+  .footer-list-header {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .footer-list-header,
+  .footer-list-item {
+    text-align: center;
   }
 }
