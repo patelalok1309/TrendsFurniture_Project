@@ -49,6 +49,10 @@
   padding: 5rem;
 }
 
+.px-btn {
+  padding-inline: 2.125rem;
+}
+
 .dark-bg-btn {
   background-color: #010101;
 }
@@ -137,6 +141,21 @@ hr.hero-horizontal-rule {
 
 .decorative-wrapper {
   width: 75%;
+}
+
+/* ------Logo Box Section----  */
+.logo-box-section {
+  row-gap: 1.5rem;
+}
+
+.logo-box-title {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.logo-box-text {
+  font-weight: 400;
 }
 
 /* --------------breakpoint------------- */
