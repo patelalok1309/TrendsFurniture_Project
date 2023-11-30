@@ -1,7 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --btn-grey-primary: #33363b;
+  --bg-dark-grey: #e7d8d6;
+  --bg-light-grey: #f5f5f5;
+}
+
+/* * {
+  outline: 1px solid black;
+} */
 
 .text-dark-navbar {
-  color: #010115;
+  color: #010115 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif !important;
+}
+
+/* -------------Utility classes --------- */
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.py-6 {
+  padding: 3rem;
+}
+
+.py-7 {
+  padding: 4rem;
 }
 
 .dark-bg-btn {
@@ -23,4 +64,87 @@
   border-radius: 4px;
   font-weight: 800;
   letter-spacing: 1px;
+}
+
+.bg-light-grey {
+  background-color: var(--bg-light-grey);
+}
+
+/* -------------Hero container --------- */
+.Hero {
+  background-image: url("./assets/Images/hero_banner.jpg");
+  background-size: cover;
+}
+
+.Hero-content {
+  padding-block: 160px;
+}
+
+.Hero-heading {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.Hero-para {
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.btn-primary-grey {
+  background-color: var(--btn-grey-primary);
+  padding: 10px 36px;
+  font-size: 19px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+hr.hero-horizontal-rule {
+  border-top: 2px solid black;
+}
+
+/* -----Interior Design Left section-- */
+.interior-design-left-section {
+  background-color: var(--bg-dark-grey);
+}
+
+/* --------------breakpoint------------- */
+/* tablet view  */
+@media screen and (max-width: 1200px) {
+  .Hero {
+    background-position: center;
+    background-size: stretch;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .interior-design-right-section {
+    margin-top: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .interior-design-section {
+    padding-inline: 1.35rem !important;
+  }
+
+  .interior-design-left-section {
+    padding: 3rem 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .interior-design-left-section,
+  .interior-design-section,
+  .interior-design-left-section p,
+  .interior-design-left-section h2 {
+    text-align: center;
+  }
+
+  .interior-design-right-section,
+  .interior-design-right-section h5,
+  .interior-design-right-section p {
+    text-align: start;
+  }
 }
