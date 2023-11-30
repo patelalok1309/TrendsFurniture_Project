@@ -135,6 +135,10 @@ hr.hero-horizontal-rule {
   line-height: 26px;
 }
 
+.decorative-wrapper {
+  width: 75%;
+}
+
 /* --------------breakpoint------------- */
 /* tablet view  */
 @media screen and (max-width: 1200px) {
@@ -148,10 +152,34 @@ hr.hero-horizontal-rule {
   .interior-design-right-section {
     margin-top: 2rem !important;
   }
+
+  .decorative-interior-left-section {
+    background-image: url(./assets/Images/background355.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .decorative-interior-right-section {
+    background-image: url(./assets/Images/background1.jpg);
+    background-size: cover;
+    margin-block: 1rem;
+  }
+
+  .decorative-section-headings {
+    font-size: 42px !important;
+  }
+
+  .decorative-wrapper {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .interior-design-section {
+    padding-inline: 1.35rem !important;
+  }
+
+  .decorative-interior-section {
     padding-inline: 1.35rem !important;
   }
 
@@ -171,5 +199,34 @@ hr.hero-horizontal-rule {
   .interior-design-right-section h5,
   .interior-design-right-section p {
     text-align: start;
+  }
+
+  .decorative-interior-left-section,
+  .decorative-interior-right-section {
+    padding: 3rem;
+  }
+
+  .decorative-wrapper {
+    width: 100%;
+  }
+
+  .decorative-interior-left-section p,
+  .decorative-interior-right-section p,
+  .decorative-section-headings {
+    text-align: center;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .decorative-section-headings {
+    font-size: 1.625rem !important;
+  }
+
+  .decorative-interior-section-para {
+    font-size: 1.15rem;
+    margin-block: 1.25rem 1.75rem;
   }
 }
