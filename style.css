@@ -154,6 +154,10 @@
   transform: translateX(15px);
 }
 
+.fade-out {
+  opacity: 1;
+}
+
 hr.hero-horizontal-rule {
   border-top: 2px solid black;
 }
@@ -175,9 +179,31 @@ hr.hero-horizontal-rule {
   background-size: cover;
 }
 
-.decorative-interior-section-para {
+.decorative-interior-right-section .decorative-interior-section-para {
   font-size: 22px;
   line-height: 26px;
+}
+.decorative-interior-left-section .decorative-interior-section-para {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.hover-img {
+  position: relative;
+}
+
+.fade-out {
+  opacity: 0;
+  z-index: 100;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  transition: opacity 0.8s ease;
+  background-color: var(--btn-grey-primary) !important;
+}
+
+.hover-img:hover .fade-out {
+  opacity: 1;
 }
 
 .decorative-wrapper {
@@ -208,6 +234,8 @@ hr.hero-horizontal-rule {
   padding-left: 0;
 }
 
+/* --------Our Clients Section--------- */
+
 .clients-logo-wrapper {
   row-gap: 4rem !important;
 }
@@ -216,6 +244,14 @@ hr.hero-horizontal-rule {
   font-size: 4rem;
   font-weight: 600;
   color: var(--btn-grey-primary);
+}
+
+.client-logo {
+  transition: transform 0.3s ease;
+}
+
+.client-logo:hover {
+  transform: translateY(-1.5rem);
 }
 
 /* -------footer------ */
