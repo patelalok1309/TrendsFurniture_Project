@@ -172,6 +172,16 @@ hr.hero-horizontal-rule {
   padding-left: 0;
 }
 
+.clients-logo-wrapper {
+  row-gap: 4rem !important;
+}
+
+.clients-header {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--btn-grey-primary);
+}
+
 /* --------------breakpoint------------- */
 /* tablet view  */
 @media screen and (max-width: 1200px) {
@@ -270,5 +280,10 @@ hr.hero-horizontal-rule {
   .decorative-interior-section-para {
     font-size: 1.15rem;
     margin-block: 1.25rem 1.75rem;
+  }
+
+  .clients-header {
+    font-size: 2.5rem;
+    font-weight: 600;
   }
 }
