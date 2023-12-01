@@ -9,7 +9,7 @@
   --bg-footer-dark: #26292b;
   --color-dark-200: #24262b;
   --color-footer-text: #a7b9b2;
-  --btn-bg-hover: #ff6868;
+  --btn-bg-hover: #d3ad68;
 }
 
 .text-dark-navbar {
@@ -325,13 +325,14 @@ ul.footer-list-container li:not(.footer-list-header) {
   font-weight: 500;
 }
 
-.subscribe-btn {
+.email-sub-btn {
   background-color: var(--btn-grey-primary);
   color: #fff;
   font-weight: bold;
   font-size: 1rem;
   border: none;
 }
+
 /* --------------breakpoint------------- */
 /* tablet view  */
 @media screen and (max-width: 1200px) {
@@ -377,6 +378,15 @@ ul.footer-list-container li:not(.footer-list-header) {
     padding-right: 2rem;
     padding-left: 0;
   }
+
+  .email-input-group {
+    flex-direction: column;
+  }
+
+  .email-sub-btn {
+    width: 50%;
+    padding-block: 1rem !important;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -405,7 +415,8 @@ ul.footer-list-container li:not(.footer-list-header) {
     font-size: 1.125rem;
   }
 
-  .interior-design-section {
+  .interior-design-section,
+  .footer {
     padding-inline: 1.35rem !important;
   }
 
@@ -498,5 +509,15 @@ ul.footer-list-container li:not(.footer-list-header) {
 
   ul.footer-list-container {
     gap: 0.5rem !important;
+  }
+
+  .email-input-group {
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .email-input {
+    width: 100%;
   }
 }
