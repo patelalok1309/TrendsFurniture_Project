@@ -114,7 +114,7 @@
 
 .Hero-para {
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--color-dark-200);
 }
 
@@ -162,11 +162,17 @@
 }
 
 .fade-out {
+  font-size: 16px;
+  padding: 8px 30px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 2px;
   opacity: 1;
 }
 
 hr.hero-horizontal-rule {
-  border-top: 3px solid var(--color-dark-200);
+  border-top: 2px solid var(--color-dark-200);
   opacity: 0.8;
   background-color: var(--color-dark-200);
 }
@@ -178,6 +184,30 @@ hr.hero-horizontal-rule {
 /* Interior Design Left section */
 .interior-design-left-section {
   background-color: var(--bg-dark-grey);
+}
+
+.text-hover-effect {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.text-hover-effect::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.text-hover-effect:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* Decorative Design Section */
@@ -296,13 +326,11 @@ ul.footer-list-container li:not(.footer-list-header) {
 }
 
 .subscribe-btn {
-  padding: 0.9rem 2rem;
-  border: none;
-  border-radius: 2px;
   background-color: var(--btn-grey-primary);
   color: #fff;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  border: none;
 }
 /* --------------breakpoint------------- */
 /* tablet view  */
@@ -322,6 +350,13 @@ ul.footer-list-container li:not(.footer-list-header) {
     background-image: url(./assets/Images/background355.jpg);
     background-size: cover;
     background-position: center;
+  }
+
+  .decorative-interior-left-section .decorative-interior-section-para {
+    line-height: 2rem;
+  }
+  .decorative-interior-right-section .decorative-interior-section-para {
+    line-height: 2rem;
   }
 
   .decorative-interior-right-section {
@@ -351,18 +386,25 @@ ul.footer-list-container li:not(.footer-list-header) {
     width: 100%;
   }
 
-  .footer-form-control {
-    width: 100% !important;
-    padding-block: 1rem;
-    border-radius: 0%;
-  }
-
-  .subscribe-btn {
-    width: 50%;
+  .Hero-btn-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 575px) {
+  .Hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .Hero-para {
+    font-size: 1.25rem !important;
+  }
+
+  .Hero-footers {
+    font-size: 1.125rem;
+  }
+
   .interior-design-section {
     padding-inline: 1.35rem !important;
   }
@@ -391,6 +433,10 @@ ul.footer-list-container li:not(.footer-list-header) {
   .interior-design-right-section h5,
   .interior-design-right-section p {
     text-align: start;
+  }
+
+  .decorative-interior-left-section .decorative-interior-section-para {
+    font-size: 1.125rem;
   }
 
   .decorative-interior-left-section,
@@ -422,18 +468,35 @@ ul.footer-list-container li:not(.footer-list-header) {
     margin-block: 1.25rem 1.75rem;
   }
 
+  .great-quality-footer {
+    margin-bottom: -2px;
+  }
+
+  .great-quality-footer-city {
+    font-size: 1rem;
+  }
+
   .clients-header {
     font-size: 2.5rem;
     font-weight: 600;
   }
 
+  .clients-logo-wrapper {
+    row-gap: 2.5rem !important;
+    margin-bottom: 1rem;
+  }
+
   .footer-list-header {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .footer-list-header,
   .footer-list-item {
     text-align: center;
+  }
+
+  ul.footer-list-container {
+    gap: 0.5rem !important;
   }
 }
