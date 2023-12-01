@@ -12,10 +12,6 @@
   --btn-bg-hover: #ff6868;
 }
 
-/* * {
-  outline: 1px solid black;
-} */
-
 .text-dark-navbar {
   color: #010115 !important;
 }
@@ -27,7 +23,7 @@
   font-family: "Barlow Semi Condensed", sans-serif !important;
 }
 
-/* -------------Utility classes --------- */
+/* Utility classes */
 
 .w-90 {
   width: 90% !important;
@@ -99,7 +95,7 @@
   color: var(--color-dark-200) !important;
 }
 
-/* -------------Hero container --------- */
+/* Hero container  */
 .Hero {
   background-image: url("./assets/Images/hero_banner.jpg");
   background-size: cover;
@@ -179,12 +175,12 @@ hr.hero-horizontal-rule {
   color: var(--color-dark-200);
 }
 
-/* -----Interior Design Left section-- */
+/* Interior Design Left section */
 .interior-design-left-section {
   background-color: var(--bg-dark-grey);
 }
 
-/*-------Decorative Design Section----  */
+/* Decorative Design Section */
 .decorative-interior-left-section {
   background-image: url(./assets/Images/background355.jpg);
   background-size: cover;
@@ -213,21 +209,23 @@ hr.hero-horizontal-rule {
   opacity: 0;
   z-index: 100;
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 10%;
-  transition: opacity 0.8s ease;
+  transition: all 0.3s ease-in-out;
   background-color: var(--btn-grey-primary) !important;
 }
 
 .hover-img:hover .fade-out {
+  transform: translateY(-20px);
   opacity: 1;
+  background-color: black !important;
 }
 
 .decorative-wrapper {
   width: 75%;
 }
 
-/* ------Logo Box Section----  */
+/* Logo Box Section  */
 .logo-box-section {
   row-gap: 1.5rem;
 }
@@ -251,7 +249,7 @@ hr.hero-horizontal-rule {
   padding-left: 0;
 }
 
-/* --------Our Clients Section--------- */
+/* Our Clients Section */
 
 .clients-logo-wrapper {
   row-gap: 4rem !important;
@@ -271,7 +269,7 @@ hr.hero-horizontal-rule {
   transform: translateY(-1.5rem);
 }
 
-/* -------footer------ */
+/* footer */
 .footer {
   background-color: var(--bg-footer-dark);
   padding-block: 4rem;
@@ -343,6 +341,24 @@ ul.footer-list-container li:not(.footer-list-header) {
   .quality-sections {
     padding-right: 2rem;
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .footer-email-grp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-form-control {
+    width: 100% !important;
+    padding-block: 1rem;
+    border-radius: 0%;
+  }
+
+  .subscribe-btn {
+    width: 50%;
   }
 }
 
